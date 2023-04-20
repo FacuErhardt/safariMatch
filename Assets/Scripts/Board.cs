@@ -33,7 +33,7 @@ public class Board : MonoBehaviour
                 var o = Instantiate(
                     selectedPiece, new Vector3(x, y, -5), Quaternion.identity);
                 o.transform.parent = transform;
-                o.GetComponent<Pieces>()?.Setup(x, y, this);
+                o.GetComponent<Piece>()?.Setup(x, y, this);
             }
         }
     }
@@ -61,8 +61,7 @@ public class Board : MonoBehaviour
                 o.transform.parent = transform;
                 o.GetComponent<Tile>()?.Setup(x, y, this);
             }
-        }
-      
+        } 
     }
 
     // Update is called once per frame

@@ -170,6 +170,16 @@ MonoBehaviour:
   height: 10
   width: 6
   tileObject: {fileID: 7726641426726739600, guid: ef379ff2fc51e804195d493fe165a969, type: 3}
+  cameraSizeOffset: 0
+  cameraVerticalOffset: 0
+  availablePieces:
+  - {fileID: 8122850297352260935, guid: d56d60188d07841429ebbfdf584cbea4, type: 3}
+  - {fileID: 5280255277521806287, guid: 94933d4aceabf42479759b9f53ca70c1, type: 3}
+  - {fileID: 7055767485407205068, guid: 6e5e003ffa19a97498ff2130af14e66e, type: 3}
+  - {fileID: 5885640599373188428, guid: 6fce083cf5ce2054a91e7f9a416100fa, type: 3}
+  - {fileID: 909856254363658886, guid: 3dbd0f7a2158db3469c06612f95eb8bc, type: 3}
+  - {fileID: 7947337574968030190, guid: 2bca65d99d0dcd34a868825287b06d16, type: 3}
+  - {fileID: 473446630874776956, guid: 343ba19153011c74fb7dd774c2a3c002, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
