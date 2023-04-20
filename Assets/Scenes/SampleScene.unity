@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dccec03f8ae229449621d8451db997a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 5
-  width: 5
+  height: 10
+  width: 6
   tileObject: {fileID: 7726641426726739600, guid: ef379ff2fc51e804195d493fe165a969, type: 3}
 --- !u!1 &519420028
 GameObject:
