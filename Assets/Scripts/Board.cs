@@ -13,13 +13,20 @@ public class Board : MonoBehaviour
 
     public GameObject[] availablePieces;
 
-    // Start is called before the first frame update
+    Tile[,] Tiles;
+    Piece[,] Pieces;
+
+    Tile startTile;
+    Tile endTile;
+
+
     void Start()
     {
+        Tiles = new Tile[width, height];
+        Pieces = new Piece[width, height];
         SetupBoard();
         PositionCamera();
         SetupPieces();
-
 
     }
 
@@ -33,7 +40,8 @@ public class Board : MonoBehaviour
                 var o = Instantiate(
                     selectedPiece, new Vector3(x, y, -5), Quaternion.identity);
                 o.transform.parent = transform;
-                o.GetComponent<Piece>()?.Setup(x, y, this);
+                Pieces[x, y] = o.GetComponent<Piece>();
+                Pieces[x, y].Setup(x, y, this);
             }
         }
     }
@@ -59,14 +67,53 @@ public class Board : MonoBehaviour
                 var o = Instantiate(
                     tileObject, new Vector3(x, y, -5), Quaternion.identity);
                 o.transform.parent = transform;
-                o.GetComponent<Tile>()?.Setup(x, y, this);
+                Tiles[x, y] = o.GetComponent<Tile>();
+                Tiles[x,y]?.Setup(x, y, this);
             }
         } 
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void TileDown(Tile tile_)
     {
-        
+        startTile = tile_;
+    }
+
+    public void TileOver(Tile tile_)
+    {
+        endTile = tile_;
+    }
+    
+    public void TileUp(Tile tile_)
+    {
+        if(startTile!=null && endTile != null && IsCloseTo(startTile,endTile))
+        {
+            SwapTiles();
+        }
+        startTile = null;
+        endTile = null;
+    }
+
+    public void SwapTiles()
+    {
+        var StartPiece = Pieces[startTile.x, startTile.y];
+        var Endpiece = Pieces[endTile.x, endTile.y];
+
+        StartPiece.Move(endTile.x, endTile.y);
+        Endpiece.Move(startTile.x, startTile.y);
+
+        Pieces[startTile.x, startTile.y] = Endpiece;
+        Pieces[endTile.x, endTile.y] = StartPiece;
+    }
+
+    public bool IsCloseTo(Tile start, Tile end)
+    {
+        if (Math.Abs((start.x - end.x)) ==1 && start.y == end.y){
+            return true;
+        }
+        if (Math.Abs((start.y - end.y)) == 1 && start.x == end.x)
+        {
+            return true;
+        }
+        return false;
     }
 }

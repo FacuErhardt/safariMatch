@@ -169,17 +169,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 10
   width: 6
-  tileObject: {fileID: 7726641426726739600, guid: ef379ff2fc51e804195d493fe165a969, type: 3}
+  tileObject: {fileID: 8035891002450418166, guid: eb76ae1267b426c40a668021d7546bce, type: 3}
   cameraSizeOffset: 0
   cameraVerticalOffset: 0
   availablePieces:
-  - {fileID: 8122850297352260935, guid: d56d60188d07841429ebbfdf584cbea4, type: 3}
-  - {fileID: 5280255277521806287, guid: 94933d4aceabf42479759b9f53ca70c1, type: 3}
-  - {fileID: 7055767485407205068, guid: 6e5e003ffa19a97498ff2130af14e66e, type: 3}
-  - {fileID: 5885640599373188428, guid: 6fce083cf5ce2054a91e7f9a416100fa, type: 3}
-  - {fileID: 909856254363658886, guid: 3dbd0f7a2158db3469c06612f95eb8bc, type: 3}
-  - {fileID: 7947337574968030190, guid: 2bca65d99d0dcd34a868825287b06d16, type: 3}
-  - {fileID: 473446630874776956, guid: 343ba19153011c74fb7dd774c2a3c002, type: 3}
+  - {fileID: 496027330529615469, guid: 74872fbc81a25d94482654067933f542, type: 3}
+  - {fileID: 7954326019805085196, guid: 94933d4aceabf42479759b9f53ca70c1, type: 3}
+  - {fileID: 6008063213436574492, guid: 6e5e003ffa19a97498ff2130af14e66e, type: 3}
+  - {fileID: 3583832632912004091, guid: 3dbd0f7a2158db3469c06612f95eb8bc, type: 3}
+  - {fileID: 3544216220667698890, guid: 6fce083cf5ce2054a91e7f9a416100fa, type: 3}
+  - {fileID: 8195333362513257550, guid: 2bca65d99d0dcd34a868825287b06d16, type: 3}
+  - {fileID: 8498418484069703937, guid: 343ba19153011c74fb7dd774c2a3c002, type: 3}
+  - {fileID: 8541846539508384152, guid: 4717abbb79c4cee40b8b0cdf3b02a621, type: 3}
+  - {fileID: 3217241293090522590, guid: 6c2432823c7058a4290cf026cc31911f, type: 3}
+  - {fileID: 5593459671410001004, guid: a7371a77e19cf2748aa8f48fd0d771f1, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,27 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -327,73 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 1
-  m_LightType: 4
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_Vertices:
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0, y: 0, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
